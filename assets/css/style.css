@@ -81,6 +81,7 @@ body{
         position: fixed;
         max-width: 100%;
         top:0;
+        background-color: #444444;
     }
     .nav-items li{
         margin: 0;
