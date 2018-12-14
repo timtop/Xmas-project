@@ -31,10 +31,36 @@ body{
 .call{
     font-family: 'Charm', cursive;
     font-size: 60px;
+    line-height: 70px;
+}
+.watch{
+    width: 70%;
+    text-align: center;
 }
 .primary{
-    margin-top: 30px;
+    margin-top: 80px;
     height: 100vh;
+}
+.action p{
+    margin-bottom: 50px;
+}
+.call-to-action{
+    background-color: #fdc615;
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 50px 50px;
+}
+.action a{
+    text-decoration: none;
+}
+.action a:hover{
+    border: 2px solid #fdc615;
+    background-color: #444444;
+    color: #fefefe;
+    transition: 1.2s;
+    -moz-transition: 1.2s;
+    -webkit-transition: 1.2s;
 }
 
 /* Media Queries */
@@ -51,6 +77,11 @@ body{
     .nav-bar{
         margin-top: 20px;
     }
+    .nav{
+        position: fixed;
+        max-width: 100%;
+        top:0;
+    }
     .nav-items li{
         margin: 0;
         padding: 0;
@@ -58,6 +89,7 @@ body{
     }
     .nav-items{
         margin-top: 0;
+        padding-left: 360px;
     }
     .nav-items li a{
         list-style: none;
@@ -71,7 +103,7 @@ body{
         transition: 1.5s;
         -moz-transition: 1.5s;
         -webkit-transition: 1.5s;
-    }
+        }
     .action{
         float: left;
         width: 40%;
