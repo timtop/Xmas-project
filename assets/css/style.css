@@ -8,7 +8,6 @@ body{
     background-color: #444444;
     color: #fefefe;
     font-family: 'Montserrat', sans-serif;
-
 }
 /* Layout styling */
 
@@ -21,6 +20,9 @@ body{
     margin: 0 auto;
     text-align: center;
 }
+.nav{
+    width: 100%;
+}
 .nav-items li{
     list-style: none;
 }
@@ -31,18 +33,18 @@ body{
 .call{
     font-family: 'Charm', cursive;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 60px;
 }
-.watch{
-    width: 70%;
+.watch,.iphone,.ipad{
+    width: 100%;
     text-align: center;
 }
 .primary{
-    margin-top: 80px;
+    padding-top: 50px;
     height: 100vh;
 }
-.action p{
-    margin-bottom: 50px;
+.action p,.call-2,.write{
+    margin-bottom: 30px;
 }
 .call-to-action{
     background-color: #fdc615;
@@ -54,21 +56,35 @@ body{
 .action a{
     text-decoration: none;
 }
-.action a:hover{
+.action a:hover,.s-content a:hover{
     border: 2px solid #fdc615;
     background-color: #444444;
     color: #fefefe;
-    transition: 1.2s;
-    -moz-transition: 1.2s;
-    -webkit-transition: 1.2s;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.secondary{
+    padding-top: 200px;
+    height: 100vh;
+}
+.tertiary{
+    height: 100vh;
+    padding-top: 90px;
+}
+.textbox{
+    background-color: #444444;
+    border-radius: 8px;
+    padding: 8px 0;
+    margin: 8px 0;
 }
 
 /* Media Queries */
 @media (min-width:769px){
-    .logo{
+    .logo,.action,.iphone,.write{
         float: left;
     }
-    .nav-items{
+    .nav-items,.watch,.s-content,.ipad{
         float: right;
     }
     .logo{
@@ -79,18 +95,19 @@ body{
     }
     .nav{
         position: fixed;
-        max-width: 100%;
+        width: 100%;
         top:0;
         background-color: #444444;
+        z-index: 1;
     }
     .nav-items li{
         margin: 0;
         padding: 0;
-        display: inline-block;
+        display: inline-block;        
     }
     .nav-items{
         margin-top: 0;
-        padding-left: 360px;
+        margin-right: 360px;
     }
     .nav-items li a{
         list-style: none;
@@ -106,18 +123,35 @@ body{
         -webkit-transition: 1.5s;
         }
     .action{
-        float: left;
         width: 40%;
         margin-top: 70px;
     }
     .watch{
-        float: right;
         width: 60%;
     }
     .watch{
         width: 60%;
         padding: 10px;
     }
+    .iphone{
+        width: 50%;
+    }
+    .s-content{
+        width: 50%;
+    }
+    .call-2,.write p{
+        font-size: 30px;
+    }
+    .secondary{
+        padding-top: 90px;
+    }
+    .write{
+        width: 40%;
+    }
+    .ipad{
+        width: 60%;
+    }
+    
     .clearfix::after{
         content: "";
         display: table;
